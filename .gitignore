@@ -48,5 +48,4 @@ node_modules
 sftp-config.json
 
 /dist/
-!/dist/.gitkeep
 
