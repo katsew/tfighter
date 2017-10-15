@@ -1,0 +1,25 @@
+{
+  "name": "tfighter",
+  "version": "0.1.0",
+  "description": "Shooting Game - Turtle fight against the moss boll",
+  "main": "index.js",
+  "scripts": {
+    "watch": "webpack --progress --watch",
+    "start": "webpack-dev-server --open",
+    "build": "webpack"
+  },
+  "keywords": [
+    "canvas",
+    "game"
+  ],
+  "private": true,
+  "author": "katsew",
+  "license": "MIT",
+  "devDependencies": {
+    "clean-webpack-plugin": "^0.1.17",
+    "debug": "^3.1.0",
+    "html-webpack-plugin": "^2.30.1",
+    "webpack": "^3.7.1",
+    "webpack-dev-server": "^2.9.1"
+  }
+}
