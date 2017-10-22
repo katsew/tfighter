@@ -1,6 +1,6 @@
 # About
 
-This is a electron shooting game.  
+This is a browser based shooting game.  
 Turtle fighter fight against the moss ball.
 
 # How to play
