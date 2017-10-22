@@ -3,6 +3,8 @@
 This is a browser based shooting game.  
 Turtle fighter fight against the moss ball.
 
+see: [demo](https://katsew.github.io/tfighter/)
+
 # How to play
 
 ## Control turtle
