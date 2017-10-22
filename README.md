@@ -7,12 +7,17 @@ Turtle fighter fight against the moss ball.
 
 ## Control turtle
 
-Arrows [←↑→↓]
- 
+### Turn
+
+left/right
+
+### Move
+
+up/down 
 
 ## Control gun
 
-super(command)+[←↑→↓]
+shift+[left/right]
 
 ## Shoot gun
 
