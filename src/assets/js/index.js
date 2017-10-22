@@ -5,17 +5,19 @@ const app = new PIXI.Application();
 app.renderer.backgroundColor = 0x000066;
 document.body.appendChild(app.view);
 
+let assetPath = process.env.ASSET_PATH ? process.env.ASSET_PATH : "";
+
 const FixRot = Math.PI * 0.5;
 const HitRound = 50;
 const PunchRange = 150;
 PIXI.loader
-    .add("turtle", "/assets/img/kame.png")
-    .add("marimo", "/assets/img/mariball.png")
-    .add("marimoBlue", "/assets/img/mariballBlue.png")
-    .add("marimoYellow", "/assets/img/mariballYellow.png")
-    .add("marimoPink", "/assets/img/mariballPink.png")
-    .add("punch", "/assets/img/punch.png")
-    .add("punchLong", "/assets/img/punchLong.png")
+    .add("turtle", `${assetPath}/assets/img/kame.png`)
+    .add("marimo", `${assetPath}/assets/img/mariball.png`)
+    .add("marimoBlue", `${assetPath}/assets/img/mariballBlue.png`)
+    .add("marimoYellow", `${assetPath}/assets/img/mariballYellow.png`)
+    .add("marimoPink", `${assetPath}/assets/img/mariballPink.png`)
+    .add("punch", `${assetPath}/assets/img/punch.png`)
+    .add("punchLong", `${assetPath}/assets/img/punchLong.png`)
     .load(function(loader, resources) {
         const turtle = new PIXI.Sprite(resources.turtle.texture);
         const marimo = new PIXI.Sprite(resources.marimo.texture);
