@@ -24,7 +24,7 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             template: "src/index.ejs",
-            title: "Output Management"
+            title: "TFighter - Shooting Game"
         }),
         new CleanWebpackPlugin("dist", {
             exclude: [".gitkeep"]
