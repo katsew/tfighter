@@ -17,9 +17,15 @@
   "license": "MIT",
   "devDependencies": {
     "clean-webpack-plugin": "^0.1.17",
+    "copy-webpack-plugin": "^4.2.0",
     "debug": "^3.1.0",
+    "file-loader": "^1.1.5",
     "html-webpack-plugin": "^2.30.1",
     "webpack": "^3.7.1",
     "webpack-dev-server": "^2.9.1"
+  },
+  "dependencies": {
+    "keyboardjs": "^2.3.4",
+    "pixi.js": "^4.5.6"
   }
 }
