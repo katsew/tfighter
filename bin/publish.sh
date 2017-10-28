@@ -11,4 +11,4 @@ git remote add origin git@github.com:katsew/tfighter.git
 git checkout -b gh-pages
 git add -A
 git commit -m "Update Game"
-git push origin gh-pages
+git push -f origin gh-pages
