@@ -4,7 +4,7 @@ const CleanWebpackPlugin = require("clean-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const webpack = require("webpack");
 
-const ASSET_PATH = process.env.ASSET_PATH || "/";
+const ASSET_PATH = process.env.ASSET_PATH || "";
 module.exports = {
     entry: "./src/assets/js/index.js",
     devtool: 'inline-source-map',
@@ -23,8 +23,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: "src/index.ejs",
-            title: "TFighter - Shooting Game"
+            template: "src/index.ejs"
         }),
         new CleanWebpackPlugin("dist", {
             exclude: [".gitkeep"]

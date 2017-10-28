@@ -2,14 +2,69 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title><%= htmlWebpackPlugin.options.title  %></title>
+	<title>TFighter - Fight against the dark moss ball!</title>
 	<style>
 		html, body {
 			margin: 0;
 			padding: 0;
 		}
+		.header, .footer, .container {
+			width: 800px;
+			margin: 0 auto;
+		}
+		.container > #app {
+			width: 800px;
+			height: 450px;
+		}
+		h1 {
+			font-weight: normal;
+			font-size: 1.6em;
+			text-align: center;
+		}
+		h2 {
+			font-size: 1.25em;
+			font-weight: normal;
+			text-align: center;
+		}
+		.howtoplay {
+			width: 100%;
+			margin: 0 auto;
+			text-align: center;
+		}
+		.commands {
+			display: inline-block;
+		}
+		.commands > p {
+			text-align: left;
+			margin: 0;
+		}
+		.copyright { 
+			display: block;
+			margin: 0.84em auto 0.84em auto;
+			text-align: center;
+		}
 	</style>
 </head>
 <body>
+	<div class="header">
+		<h1>TFighter - Fight against the dark moss ball!</h1>
+	</div>
+	<div class="container">
+		<div id="app"></div>
+	</div>
+	<div class="footer">
+		<div class="howtoplay">
+			<h2>How to play</h2>
+			<div class="commands">
+				<p>
+					[←→] turn left/right <br>
+					[↑↓] move forward/backward <br>
+					[shift + ←→] turn arm left/right <br>
+					[space] punch!
+				</p>
+			</div>
+		</div>
+		<small class="copyright">&copy; 2017 - present katsew</small>
+	</div>
 </body>
 </html>
