@@ -97,7 +97,9 @@ PIXI.loader
             return (DeathZone * DeathZone) > diff;
         }
 
-        // @todo Destroy if punch point walk through the moss ball point.
+        // @todo
+        // Destroy if punch point walk through the moss ball point.
+        // Fix rotation bug.
         function IsDestroy(M, T, P) {
             let OT = T.getGlobalPosition();
             let OMGlobal = M.getGlobalPosition();
