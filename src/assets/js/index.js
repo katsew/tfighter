@@ -99,34 +99,32 @@ PIXI.loader
 
         // @todo
         // Destroy if punch point walk through the moss ball point.
-        // Fix rotation bug.
         function IsDestroy(M, T, P) {
+
             let OT = T.getGlobalPosition();
+            let TRot = T.rotation;
+
             let OMGlobal = M.getGlobalPosition();
             let OM = {
                 x: OMGlobal.x,
                 y: OMGlobal.y
             };
 
-            let rot = P.rotation;
-            let originalRot = -Math.PI + P.rotation;
+            let originalRot = (TRot - FixRot) + P.rotation;
             let OP = {
                 x: OT.x + Math.cos(originalRot) * PunchRange,
                 y: OT.y + Math.sin(originalRot) * PunchRange
             };
-            console.log("OM: ", OM);
-            console.log("OP: ", OP);
-
             let MP = {
                 x: OP.x - OM.x,
                 y: OP.y - OM.y
             };
-            console.log("MP: ", MP)
-
-            let AbsMP = Math.sqrt( (MP.x * MP.x) + (MP.y * MP.y) );
-            console.log("Length MP: ", AbsMP);
-
-            return HitRange >= AbsMP;
+            let Length = (MP.x * MP.x) + (MP.y * MP.y);
+            
+            console.log("T rotation:", TRot);
+            console.log("P rotation: ", P.rotation);
+            console.log("Calc rotation: ", originalRot);
+            return (HitRange * HitRange) >= Length;
         }
 
         KeyboardJS.bind("up", function(e) {
