@@ -98,7 +98,7 @@ PIXI.loader
         }
 
         // @todo
-        // Destroy if punch point walk through the moss ball point.
+        // Destroy if punch point pass through the moss ball point.
         function IsDestroy(M, T, P) {
 
             let OT = T.getGlobalPosition();
